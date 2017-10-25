@@ -58,7 +58,7 @@
 		75C3EF181FA0339700D1CDB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA5BABA81F9E2E87002DD6FB /* Info.plist */,
+				BA5BAB9C1F9E2E87002DD6FB /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -99,13 +99,13 @@
 		BA5BAB9B1F9E2E87002DD6FB /* MVP_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				BA5BABA81F9E2E87002DD6FB /* Info.plist */,
 				75C3EF181FA0339700D1CDB6 /* Supporting Files */,
 				75C3EF171FA030C300D1CDB6 /* Resources */,
 				BA261CFF1F9F962F00CF9FD8 /* Helpers */,
 				BA5BABB41F9E2F90002DD6FB /* Presenters */,
 				BA5BABB11F9E2F14002DD6FB /* Views */,
 				BA5BABAE1F9E2EA1002DD6FB /* Models */,
-				BA5BAB9C1F9E2E87002DD6FB /* AppDelegate.swift */,
 			);
 			path = MVP_Sample;
 			sourceTree = "<group>";
