@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ProductListViewController: UIViewController, ProductListView {
-    var presenter: ProductListViewPresenter!
+class ProductListViewController: UIViewController, ProductListViewProtocol {
+    var presenter: ProductListPresenter!
     var productListDataSource: ProductListDataSource!
     @IBOutlet weak var tableView: UITableView!
     

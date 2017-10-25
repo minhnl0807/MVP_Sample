@@ -8,21 +8,15 @@
 
 import Foundation
 
-protocol ProductListViewPresenter {
+protocol ProductListViewPresenterProtocol {
     func showProductList()
 }
 
-/* Presenter conform ProductListViewPresenter so will have func showProductList()*/
-class ProductListPresenter: ProductListViewPresenter {
-    
-    /*
-         Declare a variable as View (ProductListView)
-         Call func setProductList() in ProductListView
-     */
-    let view: ProductListView
+class ProductListPresenter: ProductListViewPresenterProtocol {
+    let view: ProductListViewProtocol
     let products: [Product]!
     
-    required init(view: ProductListView, products: [Product]) {
+    required init(view: ProductListViewProtocol, products: [Product]) {
         self.view = view
         self.products = products
     }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ProductListView {
+protocol ProductListViewProtocol {
     func setProductList(products: [Product])
 }
