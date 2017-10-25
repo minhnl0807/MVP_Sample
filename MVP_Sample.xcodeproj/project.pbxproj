@@ -47,12 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA261CFF1F9F962F00CF9FD8 /* DataSource */ = {
+		75C3EF171FA030C300D1CDB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA5BABA31F9E2E87002DD6FB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		75C3EF181FA0339700D1CDB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA5BABA81F9E2E87002DD6FB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75C3EF191FA034CA00D1CDB6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BA5BABA01F9E2E87002DD6FB /* Main.storyboard */,
+				BA5BABA51F9E2E87002DD6FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BA261CFF1F9F962F00CF9FD8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				BA261D001F9F964400CF9FD8 /* ProductListDataSource.swift */,
 			);
-			path = DataSource;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BA5BAB901F9E2E87002DD6FB = {
@@ -74,44 +99,43 @@
 		BA5BAB9B1F9E2E87002DD6FB /* MVP_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				BA261CFF1F9F962F00CF9FD8 /* DataSource */,
-				BA5BABB41F9E2F90002DD6FB /* Presenter */,
-				BA5BABB11F9E2F14002DD6FB /* View */,
-				BA5BABAE1F9E2EA1002DD6FB /* Model */,
+				75C3EF181FA0339700D1CDB6 /* Supporting Files */,
+				75C3EF171FA030C300D1CDB6 /* Resources */,
+				BA261CFF1F9F962F00CF9FD8 /* Helpers */,
+				BA5BABB41F9E2F90002DD6FB /* Presenters */,
+				BA5BABB11F9E2F14002DD6FB /* Views */,
+				BA5BABAE1F9E2EA1002DD6FB /* Models */,
 				BA5BAB9C1F9E2E87002DD6FB /* AppDelegate.swift */,
-				BA5BABA01F9E2E87002DD6FB /* Main.storyboard */,
-				BA5BABA31F9E2E87002DD6FB /* Assets.xcassets */,
-				BA5BABA51F9E2E87002DD6FB /* LaunchScreen.storyboard */,
-				BA5BABA81F9E2E87002DD6FB /* Info.plist */,
 			);
 			path = MVP_Sample;
 			sourceTree = "<group>";
 		};
-		BA5BABAE1F9E2EA1002DD6FB /* Model */ = {
+		BA5BABAE1F9E2EA1002DD6FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BA5BABAF1F9E2EB1002DD6FB /* Product.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		BA5BABB11F9E2F14002DD6FB /* View */ = {
+		BA5BABB11F9E2F14002DD6FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75C3EF191FA034CA00D1CDB6 /* Storyboards */,
 				BA5BAB9E1F9E2E87002DD6FB /* ProductListViewController.swift */,
 				BA5BABB21F9E2F2C002DD6FB /* ProductListView.swift */,
 				BA5BABB91F9E37D3002DD6FB /* ProductCell.swift */,
 				BA5BABBA1F9E37D3002DD6FB /* ProductCell.xib */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		BA5BABB41F9E2F90002DD6FB /* Presenter */ = {
+		BA5BABB41F9E2F90002DD6FB /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				BA5BABB51F9E2FA8002DD6FB /* ProductListViewPresenter.swift */,
 			);
-			path = Presenter;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

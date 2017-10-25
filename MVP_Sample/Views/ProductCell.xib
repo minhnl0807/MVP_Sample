@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,14 +25,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYl-Af-d2S">
+                        <rect key="frame" x="176" y="13" width="136" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3sy-Mi-Bz8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/2" id="AAj-LG-qFF"/>
+                    <constraint firstAttribute="trailing" secondItem="BYl-Af-d2S" secondAttribute="trailing" constant="8" id="KTa-dr-HYH"/>
                     <constraint firstItem="3sy-Mi-Bz8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PHA-Cq-r51"/>
+                    <constraint firstItem="BYl-Af-d2S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RHW-sC-VJ7"/>
+                    <constraint firstItem="BYl-Af-d2S" firstAttribute="leading" secondItem="3sy-Mi-Bz8" secondAttribute="trailing" constant="8" id="gAf-OG-AmN"/>
                     <constraint firstItem="3sy-Mi-Bz8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="v0E-js-n0w"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="3sy-Mi-Bz8" id="foN-is-VN0"/>
+                <outlet property="priceLabel" destination="BYl-Af-d2S" id="HjZ-GH-h7r"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

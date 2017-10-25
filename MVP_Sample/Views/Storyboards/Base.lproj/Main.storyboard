@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-kb-moh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -27,7 +27,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y5N-kb-moh" secondAttribute="trailing" id="G7O-Ny-8VV"/>
                             <constraint firstAttribute="bottom" secondItem="y5N-kb-moh" secondAttribute="bottom" id="mao-LN-ifa"/>
                             <constraint firstItem="y5N-kb-moh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q8C-Ea-8ph"/>
-                            <constraint firstItem="y5N-kb-moh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rlv-sP-VVh"/>
+                            <constraint firstItem="y5N-kb-moh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="rlv-sP-VVh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

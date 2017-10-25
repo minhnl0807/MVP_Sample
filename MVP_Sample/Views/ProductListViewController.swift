@@ -14,20 +14,24 @@ class ProductListViewController: UIViewController, ProductListView {
     @IBOutlet weak var tableView: UITableView!
     
     let products = [
+        Product(name: "Monitor", price: 20),
         Product(name: "Keyboard", price: 6),
         Product(name: "Mouse", price: 5)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = ProductListPresenter(view: self, products: products)
+        initialize()
         presenter.showProductList()
     }
 
-    func setProductList(products: [Product]) {
+    func initialize() {
+        presenter = ProductListPresenter(view: self, products: products)
         productListDataSource = ProductListDataSource()
+    }
+    
+    func setProductList(products: [Product]) {
         productListDataSource.products = products
-        tableView.register(ProductCell.self, forCellReuseIdentifier: "ProductCell")
         tableView.dataSource = productListDataSource
         tableView.reloadData()
     }
